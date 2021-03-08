@@ -1,0 +1,21 @@
+.input {
+    position: absolute;
+    width: 308px;
+    height: 40px;
+    left: 16px;
+    top: 272px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.inputTwo {
+    position: absolute;
+    width: 308px;
+    height: 40px;
+    left: 16px;
+    top: 344px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    border-radius: 4px;
+}

@@ -1,0 +1,16 @@
+.radioContainer {
+    position: absolute;
+    width: 308px;
+    height: 17px;
+    left: 16px;
+    top: 142px;
+}
+
+.radioButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+ 

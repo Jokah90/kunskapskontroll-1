@@ -1,0 +1,54 @@
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickedCity {
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    left: 0px;
+    top: 60px;
+    background: #E2E2E2;
+}
+
+.clickedCityTwo {
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    left: 170px;
+    top: 60px;
+    background: #ECECEC;
+}
+
+.timeOne {
+    position: absolute;
+    width: 108px;
+    height: 16px;
+    left: 28px;
+    top: 92px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;    
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.timeTwo {
+    position: absolute;
+    width: 99px;
+    height: 16px;
+    left: 210px;
+    top: 92px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
+
