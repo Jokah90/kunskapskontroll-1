@@ -7,6 +7,8 @@ const Destination = (props) => {
         <div>
             <section>
                 <select onChange={Dest}>
+                <option>Choose destination</option>
+
                     <option>GÖTEBORG</option>
                     <option>STOCKHOLM</option>
                     <option>ÖREBRO</option>
@@ -16,10 +18,12 @@ const Destination = (props) => {
 
             <section>
                 <select onChange={Arr}>
-                    <option>GÖTEBORG</option>
-                    <option>STOCKHOLM</option>
-                    <option>ÖREBRO</option>
+                <option>Choose Destination</option>
+
                     <option>MALMÖ</option>
+                    <option>ÖREBRO</option>
+                    <option>STOCKHOLM</option>
+                    <option>GÖTEBORG</option>
                 </select>
             </section>
         </div>

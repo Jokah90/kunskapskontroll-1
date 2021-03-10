@@ -3,12 +3,17 @@ import Style from './styles/tickets.module.css'
 
 
 function Tickets(props) {
+
+    const amountTicket = (e) => {props.chooseAmountTicket(e.target.value)}
+
     return (
         <div>
             <section className={Style.tickets}>
                 <article>
                     <p className={Style.ticketNum}>Antal biljetter</p>
-                    <select className={Style.myTickets}>
+                    <select onClick={amountTicket}>
+                    <option>Choose amount</option>
+
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
