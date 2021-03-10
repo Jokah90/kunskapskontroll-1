@@ -10,8 +10,10 @@ function Titel(props) {
         <div>
             <section className={Style.titel}>
                 <article>
-                    <p className={Style.titelName}>Titel</p>
+                    <p className={Style.titelName}>Title</p>
                     <select onClick={titleNames}>
+                    <option>Title</option>
+
                         <option>Mr.</option>
                         <option>Mrs.</option>
                         <option>Ms.</option>

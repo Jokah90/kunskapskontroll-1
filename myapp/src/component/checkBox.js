@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import Style from './styles/checkBox.module.css';
 
-//REACT HOOKS useState functional component
-const Checkbox = ()=>{
-    const [isChecked,setIsChecked] = useState(false);
+
+
+const Checkbox = (props) => {
+    const Check = (e) => {props.checkBox(e.target.checked)}
     
     return (
-        <form className={Style.checkBox}>
-            <input type="checkbox" checked={isChecked} onChange={(e)=>{setIsChecked(e.target.checked)}}/>
+        <form >
+            <input type="checkbox"  onChange={Check}/>
             <label>Godkänner villkoren</label>
         </form>
     )

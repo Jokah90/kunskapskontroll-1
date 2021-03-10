@@ -6,7 +6,7 @@ import Tickets from './component/tickets';
 import Titel from './component/titelDropDown';
 import InputName from './component/inputNames';
 import Checkbox from './component/checkBox';
-import Confirm from './component/confirm';
+import Confirmation from './component/confirm';
 
 
 function App() {
@@ -31,12 +31,30 @@ function App() {
   //Title
   const [Title,setTitle] = useState('');
 
+  //Check
+  const [Check, setCheck] = useState('');
+
+  //Confirm
+  const [Confirm, setConfirm] = useState('');
+  
+
+
   //Skapar Funktionella event
   const addTrip = (e) => {setTrip(e)}  
   const addArrival = (e) => {setArrival(e)}
   const chooseClass = (e) => {setTrainclass(e)}
   const chooseAmountTicket = (e) => {setAmountTickets(e)}
   const titleName = (e) => {setTitle(e)}
+  const checkBox = (e) => {setCheck(e)}
+  const confirmBtn = (e) => {console.log(
+    ` ${Trip}, 
+      ${Arrive},
+      ${Trainclass},
+      ${Amounttickets}, 
+      ${Title}, 
+      ${Check}
+    `
+    )}
 
 
   return (
@@ -56,8 +74,12 @@ function App() {
       titleName = {titleName}
       />
       <InputName setInputname={setInputname} name={Inputname} setLast={setLast} LastName={Lastname}/>
-      <Checkbox />
-      <Confirm />
+      <Checkbox
+      checkBox = {checkBox}
+      />
+      <Confirmation 
+      confirmBtn = {confirmBtn}
+      />
     </section>
   );
 }
