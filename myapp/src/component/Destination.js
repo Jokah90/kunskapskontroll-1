@@ -1,10 +1,10 @@
 import React from 'react';
-import Style from './styles/city.module.css';
+import Style from './styles/Destination.module.css';
 
-function City(props) {
+const Destination = () => {
     return (
         <div>
-            <section className={Style.city}>
+            <section className={Style.Destination}>
                 <article>
                     <select className={Style.clickedCity}>
                         <option>STOCKHOLM</option>
@@ -26,4 +26,4 @@ function City(props) {
     )
 };
 
-export default City;
+export default Destination;

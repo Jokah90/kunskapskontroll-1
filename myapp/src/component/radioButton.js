@@ -1,6 +1,7 @@
 import Style from './styles/radioButton.module.css';
 import React, { Component } from "react";
 
+//class component
 class RadioButton extends Component {
   constructor() {
     super();
@@ -17,11 +18,11 @@ class RadioButton extends Component {
   render() {
     return (
         <section className={Style.radioContainer}>
-      <article onChange={this.onChangeValue} className={Style.radioButtons}>
-        <input  type="radio" value="Male" name="gender" />
-        <input type="radio" value="Female" name="gender" />
-      </article>
-      </section>
+          <article onChange={this.onChangeValue} className={Style.radioButtons}>
+            <input  type="radio" value="Male" name="gender" />
+            <input type="radio" value="Female" name="gender" />
+          </article>
+        </section>
     );
   }
 }

@@ -1,5 +1,5 @@
-.input {
-    position: absolute;
+.inputOne {
+ 
     width: 308px;
     height: 40px;
     left: 16px;
@@ -10,7 +10,7 @@
 }
 
 .inputTwo {
-    position: absolute;
+    
     width: 308px;
     height: 40px;
     left: 16px;
