@@ -11,20 +11,29 @@ import Confirm from './component/confirm';
 
 
 function App() {
+  //Skapar useStates HOOKS
   const [Inputname, setInputname] = useState ('');
-  const [Lastname, setLast] = useState ('');
-  const [Check, setCheckbox] = useState('');
+  const [Lastname, setLast] = useState('');
   const [Trip, setTrip] = useState('');
+  const [Arrive, setArrival] = useState('');
+
+  //Skapar Funktionella event
+  const addTrip = (e) => {setTrip(e)}  
+  const addArrival = (e) => {setArrival(e)}
 
   return (
     <section className="App">
       <h1>Tickets</h1>
-      <Destination setTrip={setTrip} Trip={Trip}/>
+      <Destination 
+      changeTrip={addTrip}
+      changeArrivalTrip={addArrival} 
+      />
+
       <RadioButton />
       <Tickets />
       <Titel />
       <InputName setInputname={setInputname} name={Inputname} setLast={setLast} LastName={Lastname}/>
-      <Checkbox  setCheckbox={setCheckbox} Check={Check}/>
+      <Checkbox />
       <Confirm />
     </section>
   );

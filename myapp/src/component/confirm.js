@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Style from './styles/confirm.module.css';
 
 class Confirmation extends React.Component {
@@ -6,7 +6,7 @@ class Confirmation extends React.Component {
       super(props);
       this.state = {isToggleOn: false};
   
-      // This binding is necessary to make `this` work in the callback
+     
       this.handleClick = this.handleClick.bind(this);
     }
   
