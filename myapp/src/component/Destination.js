@@ -1,4 +1,4 @@
-import React from ('react');
+import React from 'react';
 const Destination = (props) => {
 
     const Dest = (e) => { props.changeTrip(e.target.value) }
